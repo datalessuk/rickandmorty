@@ -15,4 +15,5 @@ Home screen shows the first 20 results from the API with picture and general inf
 * Bootstrap
 
 Author
+
 Mark Harrison
