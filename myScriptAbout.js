@@ -1,6 +1,7 @@
 
 var liveChar = document.getElementById('liveCharacters');
 var locations = document.getElementById('locations');
+var episode = document.getElementById('episode');
 
 
 function countAllCharacters(){
@@ -43,7 +44,29 @@ function getAllLocations(){
     });
 }
 
+function getAllEpisodes(){
+    let eppTotal;
+    
+    let url= "https://rickandmortyapi.com/api/episode";
 
-countAllCharacters();
-getAllLocations();
+    axios.get(url)
+    .then(function(response){
+        
+        eppTotal = response.data.info.count;
+        episode = episode.innerHTML = eppTotal;
+        
+    }).catch(function(error){
+        console.log(error);
+    })
+    .then(function(){
+
+    });
+}
+
+window.onload = function(){
+    countAllCharacters();
+    getAllLocations();
+    getAllEpisodes();
+}
+
 
