@@ -38,3 +38,22 @@ body{
     text-decoration-thickness: 2px;   
 }
 
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+}
+.footer p{
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+}
+#underline{
+    border-bottom: solid 2px #5CAD4A;
+}
+img{
+    height: 20px;
+    width: 20px;
+    margin-bottom: 5px;
+}
