@@ -6,6 +6,9 @@ Features
 
 Home screen shows the first 20 results from the API with picture and general info. Search bar will look for any character with that name for example Evil Morty will show all evil mortys from the show. 
 
+Live page for the site:
+https://datalessuk.github.io/rickandmorty/
+
 🔧 Built with
 
 * VS Code
