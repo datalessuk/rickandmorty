@@ -81,3 +81,13 @@ span{
     font-weight: lighter;
 }
 
+@media only screen and (max-width: 600px){
+    .search-container #char-serch{
+        width: 75%;
+    }
+
+    .title-container img{
+        width: 80%;
+        height: 80%;
+    }
+}
