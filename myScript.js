@@ -6,9 +6,12 @@ const liveChar = document.getElementById('liveCharacters');
 
 //Shows the first 20 characters from the API
 function getAllCharacters(pInput){
+    let randomNumber = Math.floor(Math.random() * 34) +1;
+    
     let url;
     if(pInput ==url){
-        url= "https://rickandmortyapi.com/api/character/";
+        url= `https://rickandmortyapi.com/api/character/?page=${randomNumber}`;
+        
     }
     else{
         url = `https://rickandmortyapi.com/api/character/?name=${pInput}`;
@@ -52,7 +55,7 @@ window.onload = function(){
 userInput.addEventListener('change',inputField);
 
 function inputField(){
-    let input = userInput.value.replace(' ', '+');//remove white space from input and add +
+    let input = userInput.value.replace(' ', '+');
     outPutDisplay.innerHTML = "";
     getAllCharacters(input);
 }
