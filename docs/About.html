@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" class="about-bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styleabout.css">
+    <title>About</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="./index.html"><img src="./img/logo.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="./index.html">Home</a>
+            <a class="nav-item nav-link" href="./About.html">About</a>
+          </div>
+        </div>
+    </nav>
+
+    <div class="about-container">
+        <div class="about">
+            <h3>About</h3>
+                <br />
+                <p>This is a Rick and Morty Character search written by Mark Harrison. I have used the <a href="https://rickandmortyapi.com/">Rick and Morty API</a> This gives you access to hundreds of characters from the show with some useful information about them. </p>
+            
+                <h3>Why I built this</h3>
+                <br />
+                <p>Because i am a die hard Rick and Morty fan and aspiring front end developer so why not ?</p>
+                <br />
+                <h3>Technologies used</h3>
+                <p>Vanilla javascript has been used with HTML and bootstrap CSS for the front end. The <a href="https://rickandmortyapi.com/">Rick and Morty</a> API has been used to fetch all of the shows characters.</p>
+                <br />
+                <h3>Sourse Code</h3>
+                <p>All of the sorse code for this project can be found here on my GitHub what can be found here: <br /><br /> <span id="logo"><img src="./img/GitHub-Mark-32px.png"></span><a href="https://github.com/datalessuk/rickandmorty">Rick and Morty</a></p>
+                <br />
+                <h3>Live API Stats: </h3>
+                <p>Live stats from the API</p>
+                <a href="https://rickandmortyapi.com/api/character"><p>Characters: <span id="liveCharacters"></span></p></a>
+                <a href="https://rickandmortyapi.com/api/location"><p>Locations: <span id="locations"></span></p></a> 
+                <a href="https://rickandmortyapi.com/api/episode"><p>Episodes : <span id="episode"></span></p></a>
+
+            </div>
+        
+    </div>
+    <footer class="footer mt-auto py-3 bg-dark">
+      <p>Designed by <span id="underline">Mark Harrison</span> 2021</p>
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="myScriptAbout.js"></script>    
+</body>
+</html>
