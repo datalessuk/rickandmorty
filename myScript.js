@@ -10,6 +10,9 @@ function getAllCharacters(pInput){
     
     let url;
     if(pInput ==url){
+        if(randomNumber >35){
+            randomNumber ===1;//current list up to 35 pages 
+        }
         url= `https://rickandmortyapi.com/api/character/?page=${randomNumber}`;
         
     }
