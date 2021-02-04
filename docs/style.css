@@ -90,4 +90,13 @@ span{
         width: 80%;
         height: 100%;
     }
+    /*in mobile view for the main char display */
+    .img{
+        height: 240px;
+        width: 250px;
+
+    }
+    .info-display{
+        width: 250px;
+    }
 }
