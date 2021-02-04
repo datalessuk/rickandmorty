@@ -7,8 +7,11 @@ const liveChar = document.getElementById('liveCharacters');
 //Shows the first 20 characters from the API
 function getAllCharacters(pInput){
     let randomNumber = Math.floor(Math.random() * 34) +1;
-    
     let url;
+    
+    
+
+
     if(pInput ==url){
         if(randomNumber >35){
             randomNumber ===1;//current list up to 35 pages 
@@ -62,4 +65,6 @@ function inputField(){
     outPutDisplay.innerHTML = "";
     getAllCharacters(input);
 }
+
+
 
