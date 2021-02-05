@@ -3,10 +3,9 @@ var liveChar = document.getElementById('liveCharacters');
 var locations = document.getElementById('locations');
 var episode = document.getElementById('episode');
 
-
-function countAllCharacters(){
+function liveAPIStats(){
     let charTotal;
-    let loctotal;
+    
     
     let url= "https://rickandmortyapi.com/api/character/";
 
@@ -15,43 +14,28 @@ function countAllCharacters(){
         
         charTotal = response.data.info.count;
         liveChar = liveChar.innerHTML = charTotal;
+        //console.log(charTotal);
         
     }).catch(function(error){
         console.log(error);
     })
-    .then(function(){
 
-    });
-
-}
-
-function getAllLocations(){
-    let loctotal;
-    
-    let url= "https://rickandmortyapi.com/api/location/";
-
-    axios.get(url)
+    axios.get("https://rickandmortyapi.com/api/location/")
     .then(function(response){
-        
+        let loctotal;
+
         loctotal = response.data.info.count;
         locations = locations.innerHTML = loctotal;
+        //console.log(loctotal);
         
     }).catch(function(error){
         console.log(error);
     })
-    .then(function(){
 
-    });
-}
-
-function getAllEpisodes(){
-    let eppTotal;
-    
-    let url= "https://rickandmortyapi.com/api/episode";
-
-    axios.get(url)
+    axios.get("https://rickandmortyapi.com/api/episode")
     .then(function(response){
-        
+        let eppTotal;
+
         eppTotal = response.data.info.count;
         episode = episode.innerHTML = eppTotal;
         
@@ -59,14 +43,14 @@ function getAllEpisodes(){
         console.log(error);
     })
     .then(function(){
+    })
 
-    });
 }
+
 
 window.onload = function(){
-    countAllCharacters();
-    getAllLocations();
-    getAllEpisodes();
+    liveAPIStats();
 }
+
 
 
