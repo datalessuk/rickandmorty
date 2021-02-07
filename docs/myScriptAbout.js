@@ -51,6 +51,3 @@ function liveAPIStats(){
 window.onload = function(){
     liveAPIStats();
 }
-
-
-

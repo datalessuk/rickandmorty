@@ -4,14 +4,12 @@ const userInput = document.getElementById('char-serch');
 const liveChar = document.getElementById('liveCharacters');
 
 
+
 //Shows the first 20 characters from the API
 function getAllCharacters(pInput){
     let randomNumber = Math.floor(Math.random() * 34) +1;
     let url;
     
-    
-
-
     if(pInput ==url){
         if(randomNumber >35){
             randomNumber ===1;//current list up to 34 pages 
@@ -25,8 +23,8 @@ function getAllCharacters(pInput){
     
     axios.get(url)
     .then(function(response){
-       //console.log(response);
-      
+       
+       // debugger;
         
         for(let char of response.data.results){
             

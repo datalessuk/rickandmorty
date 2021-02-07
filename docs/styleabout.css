@@ -12,6 +12,9 @@ body{
     height: 40px;
     width: 45px;
 }
+.navbar-nav .nav-item .nav-link:hover{
+    color: #5CAD4A;
+}
 .about-container{
     margin: 0 auto;
     text-align: center;
