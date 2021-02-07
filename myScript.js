@@ -51,7 +51,9 @@ function getAllCharacters(pInput){
 
 }
 
-window.onload = function(){
+
+
+window.onload = ()=>{
     getAllCharacters();
 }
 
