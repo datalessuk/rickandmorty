@@ -87,6 +87,40 @@ span{
     font-weight: lighter;
 }
 
+.contact-container{
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 200px;
+}
+.contact-container h4{
+    font-size: 2rem;
+    color: white;
+}
+.contact-container p{
+    color: white;
+    font-size: 1.3rem;
+}
+.contact-main #email{
+    color: #5CAD4A;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+}
+.footer p{
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+}
+#underline{
+    border-bottom: solid 2px #5CAD4A;
+}
+
+
 @media only screen and (max-width: 600px){
     .search-container #char-serch{
         width: 75%;
@@ -104,5 +138,14 @@ span{
     }
     .info-display{
         width: 250px;
+    }
+    .contact-container p{
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 35px;
+        width: 375px;
+    }
+    .contact-main #email{
+        margin-top: 40px;
     }
 }
