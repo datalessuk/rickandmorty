@@ -62,12 +62,15 @@ img{
     margin-bottom: 5px;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 500px){
     .about{
-        width: 400px;
+        width: 300px;
     }
     .footer{
-        margin-top: 2rem;
+        margin-bottom:-300px;
+        position: absolute;
+        bottom: 0;
+        
         
     }
 }
